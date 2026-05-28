@@ -10,7 +10,7 @@ public class Java48_array {
 		int[] score = {80, 56, 98, 77, 92};
 		
 		// for문을 사용 안하고 배열의 값을 간단히 문자로 변환하여 출력하시오
-		System.out.println("Array.toString() : " + Arrays.toString(score));
+		System.out.println("Arrays.toString() : " + Arrays.toString(score));
 		
 		// 확장형(향상된) for문 : 앞으로 이것 겁나게 많이 사용한다. 시험볼때, 프로젝트 할 때...
 		// for문으로 출력문을 작성하면 초기값, 조건식, 증가치를 따져야 되지? 불편하지?
