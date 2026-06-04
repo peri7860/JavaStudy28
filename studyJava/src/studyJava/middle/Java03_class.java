@@ -25,15 +25,21 @@ public class Java03_class {
 		// 현재 자기자신 객체의 멤버변수를 선택할 때 사용
 		
 		// 객체 생성 한 후 매개변수 없는 생성자 호출
-		Score28 s28 = new Score28();
+		Score28 s281 = new Score28();
 		
 		// 객체 생성 후 멤버변수에 값을 저장할 수 있게 된다
-		s28.bno = 1;
-		s28.name = "aaa";
-		s28.kor = 100;
-		s28.eng = 100;
-		s28.mat = 100;
+		s281.bno = 1;
+		s281.name = "aaa";
+		s281.kor = 100;
+		s281.eng = 100;
+		s281.mat = 100;
 		
+		Score28 s282 = new Score28();
+		s282.bno = 2;
+		s282.name = "bbb";
+		s282.kor = 90;
+		s282.eng = 90;
+		s282.mat = 90;
 
 	}
 
