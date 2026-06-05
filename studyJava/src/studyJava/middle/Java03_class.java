@@ -34,6 +34,8 @@ public class Java03_class {
 		s281.eng = 100;
 		s281.mat = 100;
 		
+		System.out.println();
+		
 		Score28 s282 = new Score28();
 		s282.bno = 2;
 		s282.name = "bbb";
