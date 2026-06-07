@@ -14,7 +14,7 @@ public class Exam_03 {
 		
 		pe3.ProcessBinary(dec);
 		
-		System.out.println("2진수 : " + pe3.head);
+		System.out.println("2진수 : " + pe3.result);
 
 	}
 
