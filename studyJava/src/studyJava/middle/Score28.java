@@ -53,9 +53,27 @@ public class Score28 {
 	
 	public void grade() {
 		if (this.ave >= 90) {this.grade = 'A';}
-		if (this.ave >= 80) {this.grade = 'B';}
-		if (this.ave >= 70) {this.grade = 'C';}
-		if (this.ave >= 60) {this.grade = 'D';}
+		else if (this.ave >= 80) {this.grade = 'B';}
+		else if (this.ave >= 70) {this.grade = 'C';}
+		else if (this.ave >= 60) {this.grade = 'D';}
+		else this.grade = 'F';
+	}
+	
+	public void scoreTitle() {
+		System.out.println("\t\t\t성적표");
+		System.out.println("번호\t이름\t국어\t영어\t수학\t총점\t평균\t학점");
+	}
+	
+	public void scorePrint() {
+		System.out.print(bno + "\t");
+		System.out.print(name + "\t");
+		System.out.print(kor + "\t");
+		System.out.print(eng + "\t");
+		System.out.print(mat + "\t");
+		System.out.print(tot + "\t");
+		System.out.printf("%.2f\t", ave);
+		System.out.print(grade);
+		System.out.println();
 	}
 	
 	

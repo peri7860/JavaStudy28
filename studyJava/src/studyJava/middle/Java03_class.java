@@ -27,21 +27,36 @@ public class Java03_class {
 		// 객체 생성 한 후 매개변수 없는 생성자 호출
 		Score28 s281 = new Score28();
 		
+		
 		// 객체 생성 후 멤버변수에 값을 저장할 수 있게 된다
 		s281.bno = 1;
 		s281.name = "aaa";
 		s281.kor = 100;
 		s281.eng = 100;
 		s281.mat = 100;
+		s281.calc();
+		s281.grade();
+		s281.scoreTitle();
+		s281.scorePrint();
 		
-		System.out.println();
 		
 		Score28 s282 = new Score28();
 		s282.bno = 2;
 		s282.name = "bbb";
-		s282.kor = 90;
-		s282.eng = 90;
-		s282.mat = 90;
+		s282.kor = 10;
+		s282.eng = 10;
+		s282.mat = 10;
+		s282.calc();
+		s282.grade();
+		s282.scorePrint();
+		
+		// 생성자를 통해서 값을 저장하는 방법
+		
+		Score28 s3 = new Score28(3, "ccc", 80, 60, 60);
+		s3.calc();
+		s3.grade();
+		s3.scorePrint();
+		
 
 	}
 
