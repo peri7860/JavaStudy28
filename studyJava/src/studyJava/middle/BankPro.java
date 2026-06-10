@@ -80,6 +80,10 @@ public class BankPro {
 
 		for (Bank b : bankArray) {
 			if (b != null && b.ano != null && b.ano.equals(ano)) {
+				if(b.balance < money) {
+					System.out.println("잔액이 부족합니다");
+					return;
+				}
 				b.balance -= money;
 				System.out.println("결과 : 출금성공! 잔액 : " + b.balance);
 				return;
