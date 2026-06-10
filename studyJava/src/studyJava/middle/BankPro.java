@@ -80,9 +80,13 @@ public class BankPro {
 
 		for (Bank b : bankArray) {
 			if (b != null && b.ano != null && b.ano.equals(ano)) {
-				
+				b.balance -= money;
+				System.out.println("결과 : 출금성공! 잔액 : " + b.balance);
+				return;
 			}
 		}
+		
+		System.out.println("계좌번호가 존재하지 않아요");
 	}
 
 	// 계좌 찾기 기능 메서드
