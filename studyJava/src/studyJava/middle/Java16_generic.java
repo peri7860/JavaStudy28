@@ -28,7 +28,7 @@ public class Java16_generic {
 		// 기본형 데이터 타입을 객체로 만들어 놓은 클래스
 		// boolean -> Boolean 
 		// byte -> Byte  
-		// char -> Char 
+		// char -> Character
 		// short -> Short
 		// int -> Integer
 		// long -> Long

@@ -1,10 +1,24 @@
 package studyJava.middle;
 
 class Member {
+	// 변수
+	private static Member instance = new Member();
+	
+	// 생성자
+	private Member() {
+		
+	}
+	// 메서드
+	public static Member getInstance() {
+		return instance;
+	}
 	
 }
 
 class User {
+	
+	int bno;
+	
 	private static User instance = new User();
 	// 하나의 객체를 만든다
 	// private을 붙여서 instance 변수 접근을 막아 버린다
@@ -29,13 +43,19 @@ public class Java17_singleton {
 		// 싱글톤(singleton) 패턴
 		// 하나의 어플리케이션에서 오로지 단, 하나만 생성되는 객체(인스턴스)
 		
-		Member m1 = new Member();
-		Member m2 = new Member();
+		// Member m1 = new Member();
+		// m1.getInstance();
+		// Member m2 = new Member();
+		// Member m3 = new Member();
+		
+		Member instance = Member.getInstance();
+		System.out.println(instance);
 		
 		// User user = new User(); 객체 생성 못함
 		// User 클래스에 접근제한자 private를 붙이면 접근 불가하기 때문에 객체 생성도 불가
 		
 		User.getInstance();
+		
 	}
 
 }
