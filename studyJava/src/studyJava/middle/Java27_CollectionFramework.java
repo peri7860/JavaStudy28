@@ -10,7 +10,7 @@ public class Java27_CollectionFramework {
    public static void main(String[] args) {
       // 컬렉션 프레임워크(Collections Frameowrk)
       // 다수의 객체를 다루기 위한 표준화된 프로그램 방식
-      // 컬렉션이란 여러 데이터를 편리하게 저장 / 과리하는 자료구조 모음이다
+      // 컬렉션이란 여러 데이터를 편리하게 저장 / 관리하는 자료구조 모음이다
       // 객체배열의 단점(크기조정, 기능부족)을 해결한 동적 자료구조이다
 
       // 배열 : 크기고정, 추가 / 삭제 불편
