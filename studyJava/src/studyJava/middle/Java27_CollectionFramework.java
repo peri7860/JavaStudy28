@@ -55,7 +55,7 @@ public class Java27_CollectionFramework {
 
       // 특정 위치에 삽입 = add(index, value)
       students.add(2, "강감찬");
-      System.out.println("감강찬 삽입 후 : " + students);
+      System.out.println("강감찬 삽입 후 : " + students);
 
       // set() = 학생 이름 변경
       students.set(0, "홍길순");

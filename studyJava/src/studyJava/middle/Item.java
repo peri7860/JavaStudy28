@@ -1,13 +1,14 @@
 package studyJava.middle;
 
 public class Item {
-	
+	String code;   // 상품코드
 	String name;   // 상품명
 	int price;     // 가격
 	int qty;       // 수량
 	
 	// 생성자
-	public Item(String name, int price, int qty) {
+	public Item(String code, String name, int price, int qty) {
+		this.code = code;
 		this.name = name;
 		this.price = price;
 		this.qty = qty;
@@ -21,7 +22,7 @@ public class Item {
 	// toString() 오버라이딩
 	@Override
 	public String toString() {
-		return String.format("%-10s %,8d원 %3d개 %,10d원",
-				name, price, qty, getSubtotal());
+		return String.format("%-5s %-10s %,8d원 %3d개 %,10d원",
+				code, name, price, qty, getSubtotal());
 	}
 }
