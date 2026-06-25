@@ -42,7 +42,6 @@ public class Java28_HashMap {
 			System.out.println(name + ", " + phone.get(name));
 			// get(key값)을 호출하면 value 값을 가져온다
 		}
-		// 없는 키 조회시 기본값 반환 - getOrDefault()
 		String num = phone.getOrDefault("이순신", "번호 없음!");
 		System.out.println("없는 사람 번호 : " + num);
 		// 특정번호 존재 여부 - containsValue()
