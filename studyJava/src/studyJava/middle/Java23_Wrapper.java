@@ -1,6 +1,7 @@
 package studyJava.middle;
 
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 
 public class Java23_Wrapper {
 
@@ -80,7 +81,7 @@ public class Java23_Wrapper {
 		for(String ss : s) {
 			System.out.println(ss);
 		}
-		
+//		System.out.println(Arrays.toString(s));
 		// 시작 위치, 끝 위치까지 문자열 가져오기
 		String a9 = "abcdefg";
 		String a10 = a9.substring(2, 5); // 2번째 위치부터 5번 앞 까지
@@ -119,7 +120,7 @@ public class Java23_Wrapper {
 		System.out.println(ori);
 		System.out.println(lower);
 		System.out.println(upper);
-		System.out.println(ori.equals(lower)); // flase. 소문자 a와 대문자 A는 다른 값이다
+		System.out.println(ori.equals(lower)); // false. 소문자 a와 대문자 A는 다른 값이다
 		
 		// StringBuffer 클래스
 		// 가변 크기의 문자열 저장하는 클래스
