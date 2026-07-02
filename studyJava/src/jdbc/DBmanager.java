@@ -22,7 +22,7 @@ public class DBmanager { // DB 연결 클래스
 //		return conn;
 //	}
 	
-	public Connection getInstance() {
+	public static Connection getInstance() {
 		Connection conn = null;
 		String driver = "oracle.jdbc.driver.OracleDriver";
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
